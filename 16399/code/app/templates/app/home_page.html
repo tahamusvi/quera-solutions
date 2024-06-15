@@ -1,0 +1,23 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+
+<h1>{{ title }}</h1>
+
+<h2>{% trans "Number of visits" %}</h2>
+
+<p>
+    {% blocktrans trimmed %}
+        Your website had {{ visits }} visits yesterday.
+    {% endblocktrans %}
+</p>
+
+</body>
+</html>

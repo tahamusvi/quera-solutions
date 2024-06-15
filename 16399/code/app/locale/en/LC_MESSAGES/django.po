@@ -1,0 +1,13 @@
+#coding:utf-8
+
+#: templates/your_template.html:14
+msgid "Number of visits"
+msgstr "تعداد بازدیدها"
+
+
+msgid "Website Statistics"
+msgstr "آمار سایت"
+
+#: templates/your_template.html:18
+msgid "Your website had {{ visits }} visits yesterday."
+msgstr "trtyryrty"
