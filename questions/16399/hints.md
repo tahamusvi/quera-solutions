@@ -1,6 +1,30 @@
-# Translation
+
+# Question 16399
+
+**Question Title**: Translation
+
+**Question Link**: [Translation](https://quera.org/problemset/16399) 
+
+**Difficulty Level**: 🔴
+
+## Question Description
+We ask you to translate this page into Farsi using Django's translation facilities as shown below.
+
+## Approach
+- In my first attempt, I understood a series of contents about Django's translation system, which I wrote in the learning section.
+
+## Key Points
+- set `LOCALE_PATHS` in `settings.py` .
 
 
+
+## Status
+
+- **Work in Progress**
+
+
+
+## Learning
 
 1. **Create the locale folder**: First, you need to create a `locale` folder in your Django project's root directory or in any apps directory.
 
