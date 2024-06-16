@@ -29,6 +29,7 @@ If you have any questions or would like to contribute to this repository, you ca
 | 16399 |  [Translation](questions/16399/hints.md) | 🔴 | Pending|
 | 21210 |  [Filters and Translation](questions/21210/hints.md) | 🟢 | Completed |
 | 21211 |  [Shop](questions/21211/hints.md) | 🟠 |  Pending |
+| 33476 |  [How was the food?](questions/33476/hints.md) | 🟠 | Completed |
 
 
 
