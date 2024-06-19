@@ -23,13 +23,14 @@ If you have any questions or would like to contribute to this repository, you ca
 
 ## List of Questions
 
-| No. | Question | Difficulty | Status |
-| --- | --- | --- | --- |
-| 14742 |  [Blog implementation](questions/14742/hints.md) | 🟢 | Completed |
-| 16399 |  [Translation](questions/16399/hints.md) | 🔴 | Pending|
-| 21210 |  [Filters and Translation](questions/21210/hints.md) | 🟢 | Completed |
-| 21211 |  [Shop](questions/21211/hints.md) | 🟠 |  Pending |
-| 33476 |  [How was the food?](questions/33476/hints.md) | 🟠 | Completed |
+| No. | Question | Difficulty | Status | Category |
+| --- | --- | --- | --- | --- |
+| 14742 |  [Blog implementation](questions/14742/hints.md) | 🟢 | Completed | django |
+| 16399 |  [Translation](questions/16399/hints.md) | 🔴 | Pending| django |
+| 21210 |  [Filters and Translation](questions/21210/hints.md) | 🟢 | Completed | django |
+| 21211 |  [Shop](questions/21211/hints.md) | 🟠 |  Pending | django |
+| 33476 |  [How was the food?](questions/33476/hints.md) | 🟠 | Completed | django |
+| 14742 |  [Fruit chess](questions/60134/hints.md) | 🟢 | Completed | python |
 
 
 
