@@ -31,7 +31,7 @@ If you have any questions or would like to contribute to this repository, you ca
 | 21211 |  [Shop](questions/21211/hints.md) | 🟠 |  Pending | django |
 | 33476 |  [How was the food?](questions/33476/hints.md) | 🟠 | Completed | django |
 | 14742 |  [Fruit chess](questions/60134/hints.md) | 🟢 | Completed | python |
-
+| 14744 |  [Maitham library](questions/14744/hints.md) | 🟠 | Completed | django |
 
 
 
