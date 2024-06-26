@@ -32,6 +32,7 @@ If you have any questions or would like to contribute to this repository, you ca
 | 33476 |  [How was the food?](questions/33476/hints.md) | 🟠 | Completed | django |
 | 14742 |  [Fruit chess](questions/60134/hints.md) | 🟢 | Completed | python |
 | 14744 |  [Maitham library](questions/14744/hints.md) | 🟠 | Completed | django |
+| 129725 |  [Jalal and Jalali](questions/129725/hints.md) | 🟠 | Completed | django |
 
 
 

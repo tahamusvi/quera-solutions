@@ -5,7 +5,7 @@
 
 **Question Link**: [Maitham library](https://quera.org/problemset/14744) 
 
-**Difficulty Level**: 🔴/🟠/🟢
+**Difficulty Level**: 🟠
 ## Question Description
 In this project we have a book model. This model has two functions: borrow_book and return_book. The first one is used to borrow books and the second one is used to return books.
 
