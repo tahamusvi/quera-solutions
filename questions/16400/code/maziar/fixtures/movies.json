@@ -1,0 +1,58 @@
+[
+  {
+    "model":"app.Movie",
+    "pk":1,
+    "fields":{
+     "title":"Children of heaven",
+     "release_year":1997,
+     "play_time": "2018-4-20 22:00"
+
+    }
+  },
+  {
+    "model":"app.Movie",
+    "pk":2,
+    "fields":{
+     "title":"About Elly",
+     "release_year":2009,
+     "play_time": "2018-4-20 20:00"
+
+    }
+  },
+
+  {
+    "model":"app.Movie",
+    "pk":3,
+    "fields":{
+     "title":"A separation",
+     "release_year":2011,
+     "play_time": "2018-4-22 18:00"
+
+    }
+  },
+
+  {
+    "model":"app.Movie",
+    "pk":4,
+    "fields":{
+     "title":"The salesman",
+     "release_year":2016,
+     "play_time": "2018-4-21 18:00"
+
+    }
+  },
+
+  {
+    "model":"app.Movie",
+    "pk":5,
+    "fields":{
+     "title":"The Elephant king",
+     "release_year":2017,
+     "play_time": "2018-4-21 20:00"
+
+    }
+  }
+
+ 
+
+]
