@@ -33,6 +33,7 @@ If you have any questions or would like to contribute to this repository, you ca
 | 14742 |  [Fruit chess](questions/60134/hints.md) | 🟢 | Completed | python |
 | 14744 |  [Maitham library](questions/14744/hints.md) | 🟠 | Completed | django |
 | 129725 |  [Jalal and Jalali](questions/129725/hints.md) | 🟠 | Completed | django |
+| 129727 |  [Migration!](questions/129727/hints.md) | 🟠 | Completed | django |
 
 
 

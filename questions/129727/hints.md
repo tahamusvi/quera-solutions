@@ -1,36 +1,39 @@
 
-# Question [Question Number]
+# Question 129727
 
-**Question Title**: [Question Title]
+**Question Title**: Migration!
 
-**Question Link**: [Question Title](https://quera.org/problemset/14742) 
+**Question Link**: [Migration!](https://quera.org/problemset/129727) 
 
-**Difficulty Level**: 🔴/🟠/🟢
+**Difficulty Level**: 🟠
 ## Question Description
-[Provide a brief description of the question and the problem it is trying to solve.]
+- In this problem, we have to change the data structure of the model and replace the data according to these changes
 
 ## Approach
-[Explain the approach you took to solve the question. This can include steps, code snippets, and any relevant explanations.]
+
+The key to resolving the issue with the `set_published` function is to handle the `updated` field properly. Since the `updated` field is set to `auto_now=True`, it will automatically update to the current time whenever the `save()` method is called on an `Article` instance. This means that after setting `article.updated = article.created` in the `set_published` function, the subsequent `article.save()` call will overwrite the value with the current timestamp.
+
+To address this, you can either define the `updated` field without `auto_now=True`, allowing you to manually set the value as needed, or use the `F` expression to update the `published` and `updated` fields directly without triggering the automatic update behavior. By taking either of these approaches, you can ensure that the `published` and `updated` fields are properly set for all existing articles during the migration process.
+
 
 ## Key Points
-- [List the key points, concepts, or techniques that are important to understand in order to solve this question.]
-- [For example, if the question is about Django models, you can mention topics like field types, relationships, and model methods.]
+- ORM django
+- transaction.atomic
+- migrations
 
 ## Sample Code
 ```python
-# Provide relevant code snippets that demonstrate the solution
+@transaction.atomic
+def set_published(apps, schema_editor):
+    Article = apps.get_model('blog', 'Article')
+    Article.objects.update(published=F('created'), updated=F('created'))
 ```
 
-## Additional Resources
-- [List any additional resources, tutorials, or references that might be helpful for understanding this question and its solution.]
-- [These can include links to Django documentation, blog posts, Stack Overflow answers, etc.]
+
 
 ## Status
 
-
 - **Completed**
-- **Pending**
-- **Work in Progress**
-- **Under Review**
 
 ## Learning
+- [migrations-operations](./../../learn/migrations-operations.md)
