@@ -16,12 +16,18 @@ class Command(BaseCommand):
          remove_all = options['all']
 
          if remove_all:
-            Company.objects.all().delete()
-
-         for name in names:
-             if Company.objects.filter(name=name).exists():
-                 Company.objects.get(name=name).delete()
-             else:
-                 error_msg= f"{name} matching query does not exist."
-                 self.stderr.write(error_msg)    
-                 
+            if Company.objects.all().count() !=0:
+                Company.objects.all().delete()
+            else:
+               error_msg= f"Matching query does not exist."
+               self.stderr.write(error_msg)    
+                         
+         else:
+             
+            for name in names:
+                if Company.objects.filter(name=name).exists():
+                    Company.objects.get(name=name).delete()
+                else:
+                    error_msg= f"{name} matching query does not exist."
+                    self.stderr.write(error_msg)    
+                    

@@ -43,7 +43,7 @@ class Command(BaseCommand):
 
 
 
-
+        
             if email:
                 try:
                     validate_email(email)
@@ -61,11 +61,11 @@ class Command(BaseCommand):
                         raise CommandError("Error: Phone number format is not valid.")
                 
                 elif len(phone)==13:
-                    if phone[:3] != '+98':
+                    if phone[:4] != '+989':
                         raise CommandError("Error: Phone number format is not valid.")
                 
                 elif len(phone)==14:
-                    if phone[:4] != '0098':
+                    if phone[:5] != '00989':
                         raise CommandError("Error: Phone number format is not valid.")
                 
 
@@ -79,11 +79,14 @@ class Command(BaseCommand):
             if description:
                 if len(description) > 200:
                     raise CommandError('Description should not exceed 200 characters.')
+                if description == '':
+                   pass
                 else:
                     company.description = description    
                 
 
+
             Company.objects.create(name=name, email=email, phone=phone, description=description if description else '')
            
 
-            print(f'Company {company.name} has been updated.')
+            #print(f'Company {company.name} has been updated.')

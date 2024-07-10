@@ -94,7 +94,7 @@ class Command(BaseCommand):
 							self.stderr.write(error_msg)
 								
 			description=input("Description: ")
+				#at first i was like i can leave this field if the user doesnt give anything for it turns out i need to say description=None otherwise my answer will be wrong
 
-
-			Company.objects.create(name=name, email=email, phone=phone, description=description if description else '')
+			Company.objects.create(name=name, email=email, phone=phone, description=description if description else None)
 			self.stdout.write("Company successfully created!")	

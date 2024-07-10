@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 import csv
 from pathlib import Path
 from career.models import Company  # Assuming the model is in the same app
-
+from django.http import HttpResponse
 
 class Command(BaseCommand):
    help = 'Export company data to a CSV file'
@@ -18,5 +18,17 @@ class Command(BaseCommand):
             row = [company.name,company.email,company.phone]
             writer.writerow(row)
       #print(f'{len(companies)} companies exported to {file_path}')
+            
+
+             # def handle(self,*args,**options):
+   #    companies=Company.objects.all()
+   #    response=HttpResponse('text/csv')
+   #    response['Content-Disposition'] = 'attachment; filename=company_export.csv'
+   #    writer = csv.writer(response)
+   #    writer.writerow(['name','email','phone'])
+   #    company_fields = companies.values_list('name','email','phone')
+   #    for c in company_fields:
+   #       writer.writerow(c)
+   #    return response   
       
       
