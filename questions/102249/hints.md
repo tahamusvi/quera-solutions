@@ -1,11 +1,11 @@
 
-# Question 16400
+# Question 102249
 
 **Question Title**: Command Line
 
 **Question Link**: [Command Line](https://quera.org/problemset/102249) 
 
-**Difficulty Level**: 🔴/🟠/🟢
+**Difficulty Level**: 🟠
 ## Question Description
 We are going to make some djanog custom commands with different intentions towards working with our company model. For example adding new company or editting the existing company pr removing companies or taking an out put of the companies info in a csv file, all by using command line.
 
@@ -71,12 +71,7 @@ class Command(BaseCommand):
 Well I read lots of docs and watched lots of youtube tutorails
 
 ## Status
-Work in progress
-
 - **Completed**
-- **Pending**
-- **Work in Progress**
-- **Under Review**
 
 ## Learning
 

@@ -35,6 +35,7 @@ If you have any questions or would like to contribute to this repository, you ca
 | 129725 |  [Jalal and Jalali](questions/129725/hints.md) | 🟠 | Completed | django |
 | 129727 |  [Migration!](questions/129727/hints.md) | 🟠 | Completed | django |
 | 102252 |  [Train](questions/102252/hints.md) | 🟢 | Completed | python |
+| 102249 |  [Command Line](questions/102249/hints.md) | 🟠 | Completed | django |
 | 87176 | Difference game| 🟢 | Completed | python |
 | 16397 | Grade File| 🟢 | Completed | python |
 | 21213 | Proget Management| 🟠 | Pending | django |
