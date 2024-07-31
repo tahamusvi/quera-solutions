@@ -18,7 +18,7 @@ Aggregate functions in SQL are used to perform calculations on a set of values a
 
 
 
-# Diffrence between aggregate and annotate
+# Difference between aggregate and annotate
 ```python
 
 #Annotating
