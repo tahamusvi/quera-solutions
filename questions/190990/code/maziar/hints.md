@@ -18,6 +18,33 @@ Aggregate functions in SQL are used to perform calculations on a set of values a
 
 
 
+# Diffrence between aggregate and annotate
+```python
+
+#Annotating
+products = Product.objects.annotate(
+    average_price=Avg('price'),
+    total_reviews=Count('reviews')
+)
+for product in products:
+    print(product.average_price, product.total_reviews)
+
+
+
+#Aggregating
+product = Product.objects.aggregate(
+     average_price=Avg('price'),
+      total_reviews=Count('reviews')
+
+)
+
+
+print(product['average_price'], product['total_reviews'])
+
+```
+
+
+
 # values and values list
 
 
@@ -75,29 +102,3 @@ In summary, values() returns dictionaries with key-value pairs for the specified
  structure for further processing or displaying in your Django templates.
 
 
-
-
-# Diffrence between aggregate and annotate
-```python
-
-#Annotating
-products = Product.objects.annotate(
-    average_price=Avg('price'),
-    total_reviews=Count('reviews')
-)
-for product in products:
-    print(product.average_price, product.total_reviews)
-
-
-
-#Aggregating
-product = Product.objects.aggregate(
-     average_price=Avg('price'),
-      total_reviews=Count('reviews')
-
-)
-
-
-print(product['average_price'], product['total_reviews'])
-
-```
