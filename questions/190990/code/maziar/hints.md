@@ -1,6 +1,6 @@
 
 
-# aggragere 
+# Aggregate 
 
 Aggregate functions in SQL are used to perform calculations on a set of values and return a single result. They operate on a group of rows, often in conjunction with the GROUP BY clause, to provide summary data or statistics about your dataset.
 
@@ -18,7 +18,7 @@ Aggregate functions in SQL are used to perform calculations on a set of values a
 
 
 
-# Difference between aggregate and annotate
+# Difference between Aggregate and Annotate
 ```python
 
 #Annotating
@@ -45,7 +45,7 @@ print(product['average_price'], product['total_reviews'])
 
 
 
-# values and values list
+# values and values_list
 
 
 
@@ -59,7 +59,7 @@ the queryset and contains the specified fields as key-value pairs.
 Example:
 ```python
 products = Product.objects.values('name', 'price')
-This will return a queryset containing dictionaries like this:
+#This will return a queryset containing dictionaries like this:
 
 [
     {'name': 'Product 1', 'price': 10},
