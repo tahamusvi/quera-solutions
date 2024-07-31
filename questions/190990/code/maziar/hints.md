@@ -15,7 +15,9 @@ Aggregate functions in SQL are used to perform calculations on a set of values a
      separated by a double underscore (__). So, the key price__avg refers to the average of the price field.
 
 
-
+# Annotate
+In Django, annotate() is a function used in the ORM (Object-Relational Mapping) to perform aggregation operations on a queryset while maintaining the original structure of the queryset. It adds new columns to each object in the queryset, containing the results of the aggregation functions applied to specific fields.
+The primary purpose of annotate() is to enrich the queryset with additional data derived from the aggregation functions. This allows you to access both the original fields of each object and the new annotated fields, which provide aggregated values based on the entire queryset or a specific grouping.
 
 
 # Difference between Aggregate and Annotate
