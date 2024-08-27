@@ -1,4 +1,16 @@
-**how is it different to inherit from User or AbastractUser while making the user model in django**
+# Question 76281
+
+
+**Question Title**: jitsi
+
+**Question Link**: [jitsi](https://quera.org/problemset/76281) 
+
+**Difficulty Level**: 🟠
+
+
+## Key Points
+
+1. **Difference is usage of User and AbstractUser**
 
 When creating a custom user model in Django, you have two main options: inheriting from User (django.contrib.auth.models.User) or AbstractUser (django.contrib.auth.models.AbstractUser). Here's a breakdown of the differences between the two approaches:
 Inheriting from User:
@@ -14,7 +26,7 @@ In conclusion, the choice between inheriting from User or AbstractUser depends o
 
 
 
-**get_or_create**
+2. **get_or_create**
 The get_or_create method in Django is a built-in method provided by Django's Model Managers. It's a combination of a get and a create method that allows you to retrieve an object from the database based on certain parameters, or create a new one if it doesn't exist yet.
 The method signature for get_or_create looks like this:
 python
