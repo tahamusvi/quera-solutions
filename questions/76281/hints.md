@@ -154,3 +154,11 @@ team, created = Team.objects.get_or_create(name='My Team', defaults={'some_field
 ```
 
 In this example, get_or_create tries to find a Team object with the name 'My Team'. If it doesn't find one, it creates a new Team object with the provided name and sets some_field to 'value'. The team variable will hold the object, and created will be True if the object was created or False if it already existed and was just retrieved from the database.
+
+**What Happens If defaults is Not Defined?**
+
+If the object is not found based on the provided **kwargs, Django will attempt to create a new instance using only the values specified in **kwargs.
+
+If defaults is omitted and the fields in **kwargs are sufficient to create a valid instance (i.e., they satisfy all required fields in the model), the instance will be created successfully.
+
+If required fields are missing in **kwargs and you do not provide them via defaults, a __IntegrityError__ or __ValidationError__ might be raised during the creation process because the database will complain about missing mandatory fields.
