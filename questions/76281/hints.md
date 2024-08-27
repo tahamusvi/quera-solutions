@@ -162,3 +162,9 @@ If the object is not found based on the provided **kwargs, Django will attempt t
 If defaults is omitted and the fields in **kwargs are sufficient to create a valid instance (i.e., they satisfy all required fields in the model), the instance will be created successfully.
 
 If required fields are missing in **kwargs and you do not provide them via defaults, a __IntegrityError__ or __ValidationError__ might be raised during the creation process because the database will complain about missing mandatory fields.
+
+
+
+3. **commit=False**
+
+The commit=False argument tells Django to create the user object from the form data but not save it to the database just yet. This gives you the opportunity to modify the object before saving it. For example, you might want to set additional fields or perform further actions before saving.
