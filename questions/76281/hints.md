@@ -15,13 +15,18 @@
 When creating a custom user model in Django, you have two main options: inheriting from User  # __(django.contrib.auth.models.User)__ or AbstractUser __(django.contrib.auth.models.AbstractUser)__. Here's a breakdown of the differences between the two approaches:
 
 **Extending the Built-in User Model:**
+
 By inheriting from User, you are extending the built-in user model and can add additional fields or methods. The existing fields and behavior of User will be preserved in your custom model.
 Your custom model will have all the default user fields like username, email, password, etc.
 However, there are limitations when extending User. For example, you cannot modify any of the existing fields or change the model's unique constraints.
 
-__When to use:__ If you only need to add a few extra fields or extend functionality without changing the fundamental structure of the user model.
+__When to use:__ 
 
-__How it works:__ You create a one-to-one relationship with Django's default User model using a profile model.
+If you only need to add a few extra fields or extend functionality without changing the fundamental structure of the user model.
+
+__How it works:__ 
+
+You create a one-to-one relationship with Django's default User model using a profile model.
 
 ```python
 from django.contrib.auth.models import User
@@ -33,16 +38,25 @@ class Profile(models.Model):
     website = models.URLField()
 ```
 
-__Pros:__ Simple and works well if you just need to store additional information related to users.
+__Pros:__
 
-__Cons:__ If you want deeper customization (e.g., changing the username field, email as the primary identifier), this approach is limited.
+ Simple and works well if you just need to store additional information related to users.
+
+__Cons:__ 
+
+If you want deeper customization (e.g., changing the username field, email as the primary identifier), this approach is limited.
 
 **Substituting the User Model with AbstractUser or AbstractBaseUser:**
 
 __Using AbstractUser:__
-__When to use:__ When you want to customize the user model but still want to retain the basic fields and behavior of Django’s default User model (like username, password, email, etc.).
 
-__How it works:__ You subclass AbstractUser and add or modify fields as needed.
+__When to use:__
+
+ When you want to customize the user model but still want to retain the basic fields and behavior of Django’s default User model (like username, password, email, etc.).
+
+__How it works:__ 
+
+You subclass AbstractUser and add or modify fields as needed.
 
 ```python
 from django.contrib.auth.models import AbstractUser
@@ -54,19 +68,24 @@ class CustomUser(AbstractUser):
 ```
 
 __Pros:__
+
 - Inherits all the built-in functionalities of Django’s default user model.-
 - Easier to set up since you don't have to define every field from scratch.
 - Ideal if you only need to add a few fields or slightly modify the existing fields.
+
 __Cons:__
+
  Less flexibility compared to AbstractBaseUser if you want to fully customize the user model (e.g., changing how authentication works).
 
 
 __Using AbstractBaseUser:__
 
 __When to use:__
+
 When you need complete control over the user model and authentication mechanism (e.g., changing how users log in, fully customizing fields).
 
 __How it works:__
+
  You subclass AbstractBaseUser and build the user model from scratch. You’ll need to define all fields (like username, email, etc.) and manage the authentication workflow.
 
 ```python
@@ -115,6 +134,7 @@ AbstractBaseUser: The most flexible option, allowing you to build a completely c
 
 
 2. **get_or_create**
+
 The get_or_create method in Django is a built-in method provided by Django's Model Managers. It's a combination of a get and a create method that allows you to retrieve an object from the database based on certain parameters, or create a new one if it doesn't exist yet.
 The method signature for get_or_create looks like this:
 ```python
