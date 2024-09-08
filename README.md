@@ -40,7 +40,8 @@ If you have any questions or would like to contribute to this repository, you ca
 | 16397 | Grade File| 🟢 | Completed | python |
 | 21213 | Proget Management| 🟠 | Pending | django |
 | 190990 | Quorashop queries | 🟠 | Completed | django
-| 76231 | jit-si | 🟠 | completed | django
+| 76231 | jit-si | 🟠 | Completed | django
+| 21212 | blog-api| 🟠 |  Completed  | django
 
 
 
