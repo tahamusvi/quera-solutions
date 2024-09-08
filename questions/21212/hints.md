@@ -1,4 +1,4 @@
-# The first challenge showing the ownners username instead of id
+# The first challenge showing the owners username instead of id
 
 **Option 1: Using StringRelatedField**
 If the __str__() method of the owner model (typically a User model) returns the username, you can use the StringRelatedField:
